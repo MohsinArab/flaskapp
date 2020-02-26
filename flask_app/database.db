@@ -1,0 +1,9 @@
+import sqlite3
+
+con = sqlite3.connect('database.py')
+cur = con.cursor()
+print "Opened database successfully";
+
+cur.execute('CREATE TABLE students (name TEXT, addr TEXT, city TEXT, pin TEXT)')
+print "Table created successfully";
+con.close()

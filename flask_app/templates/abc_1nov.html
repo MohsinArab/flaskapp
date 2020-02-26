@@ -1,0 +1,118 @@
+<table class="axial noborder bottomspace table table-condensed" role="presentation">
+  <tbody><tr>
+    <th class="col-sm-4"><label for="fbclc_userName" title="Required">
+              <span class="required requiredAccessible">*</span>Email Address:
+    </label></th>
+    <td><input class="form-control" type="text" size="30" maxlength="99" onkeydown="clearErrMsg(event)" id="fbclc_userName" onblur="checkforMandatory(&quot;fbclc_userName&quot;, &quot;Email%20Address%3a&quot;)" name="fbclc_userName" value="" aria-required="true">
+               <div aria-live="assertive" role="alert" class="rcmValidationMsgArea hide" id="fbclc_userName_error"></div>
+               <script type="text/javascript"><!--
+
+               vallidationObjectContainer.push({id : "fbclc_userName",label : "Email Address:"});
+               
+
+//--></script>
+
+               </td>
+  </tr>
+
+  
+  
+  <tr>
+    <th class="col-sm-4"><label for="fbclc_emailConf" title="Required"><span class="required requiredAccessible">*</span> Retype Email Address:
+    </label></th>
+    <td><input class="form-control" type="text" size="30" maxlength="99" onkeydown="clearErrMsg(event)" onpaste="SFDOMEvent.preventDefault(event);" id="fbclc_emailConf" onblur="checkforMandatory(&quot;fbclc_emailConf&quot;, &quot;Retype%20Email%20Address%3a&quot;);validateEmail()" name="fbclc_emailConf" title="Retype Email Address:" value="" aria-required="true">
+                <div aria-live="assertive" role="alert" class="rcmValidationMsgArea hide" id="fbclc_emailConf_error"></div>
+               <span id="fbclc_emailErrMsg" class="rcmValidationMsgArea" role="alert" style="display: inline;"><span>Your email address doesn't match the repeated one. Please try again.</span></span>
+               <script type="text/javascript"><!--
+
+               vallidationObjectContainer.push({id : "fbclc_emailConf",label : "Retype Email Address:"});
+               
+
+//--></script>
+
+     </td>
+  </tr>
+  
+  
+  <tr>
+    <th class="col-sm-4"><label for="fbclc_pwd" title="Required"><span class="required requiredAccessible">*</span>Choose Password:
+      </label></th>
+      <td> 
+         <input class="form-control" id="fbclc_pwd" type="password" size="30" maxlength="99" name="fbclc_pwd" value="" onkeyup="checkPasswordPolicy(event,fbclc_pwdConf,true);" onfocus="RCMPwdPolicyUtil.showResponsiveAlert('rcmPwdPolicyAnchor');return false;" onblur="checkforMandatory(&quot;fbclc_pwd&quot;, &quot;Choose Password:&quot;);checkPasswordPolicy(event,fbclc_pwdConf,true);SFDom.setFocus(&quot;PasswordPolicyText&quot;);" aria-describedby="rcmPwdPolicyAnchor" aria-required="true">
+          <div aria-live="assertive" role="alert" class="rcmValidationMsgArea hide" id="fbclc_pwd_error"></div>
+        <script type="text/javascript"><!--
+
+        vallidationObjectContainer.push({id : "fbclc_pwd",label : "Choose Password:"});
+        
+
+//--></script>
+
+         
+         <div id="rcmPwdPolicyProgressBar" class="mobileApplyPwdPolicyProgressbar" style="display:none"></div>
+         <div id="rcmPwdPolicyAnchor" class="alert alert-info mobileApplyPwdPolicy" style="display:none"></div>
+         
+     </td>
+  </tr>
+  <tr>
+    <th class="col-sm-4"><label for="fbclc_pwdConf" title="Required"><span class="required requiredAccessible">*</span>Retype Password:
+    </label></th>
+
+    <td>
+         <input class="form-control invalidInput" id="fbclc_pwdConf" type="password" size="30" maxlength="99" name="fbclc_pwdConf" value="" onkeyup="checkResetPasswordPolicy(event,fbclc_pwd,true);" onblur="checkforMandatory(&quot;fbclc_pwdConf&quot;, &quot;Retype Password:&quot;);checkResetPasswordPolicy(event,fbclc_pwd,true);SFDom.setFocus(&quot;pwdMatchOrMismatch&quot;);" aria-required="true">
+         <div id="rcmResetPwdPolicyProgressBar" class="mobileApplyResetPwdPolicyProgressBar" style="display:none"></div>
+         <div aria-live="assertive" role="alert" class="rcmValidationMsgArea" id="fbclc_pwdConf_error"><span>Retype Password is required</span></div>
+          <script type="text/javascript"><!--
+
+           vallidationObjectContainer.push({id : "fbclc_pwdConf",label : "Retype Password:"});
+          
+
+//--></script>
+
+    </td>
+  </tr>
+  <tr>
+    <th class="col-sm-4"><label for="fbclc_fName" title="Required"><span class="required requiredAccessible">*</span>First Name:
+    </label></th>
+    <td><input class="form-control" type="text" size="30" maxlength="99" id="fbclc_fName" onblur="checkforMandatory(&quot;fbclc_fName&quot;, &quot;First Name:&quot;)" name="fbclc_fName" value="" aria-required="true">         
+               <div aria-live="assertive" role="alert" class="rcmValidationMsgArea hide" id="fbclc_fName_error"></div>
+               <script type="text/javascript"><!--
+
+                vallidationObjectContainer.push({id : "fbclc_fName",label : "First Name:"});
+               
+
+//--></script>
+
+    </td>
+  </tr>
+  <tr>
+    <th class="col-sm-4"><label for="fbclc_lName" title="Required"><span class="required requiredAccessible">*</span>Last Name:
+    </label></th>
+    <td><input class="form-control" type="text" size="30" maxlength="99" id="fbclc_lName" onblur="checkforMandatory(&quot;fbclc_lName&quot;, &quot;Last Name:&quot;)" name="fbclc_lName" value="" aria-required="true">
+               <div aria-live="assertive" role="alert" class="rcmValidationMsgArea hide" id="fbclc_lName_error"></div>
+               <script type="text/javascript"><!--
+
+                vallidationObjectContainer.push({id : "fbclc_lName",label : "Last Name:"});
+               
+
+//--></script>
+
+     </td>
+          
+  </tr>
+ <!-- Cross border search preference -->
+  
+      
+  <!-- Create Account button -->
+  <tr>
+  <th></th>
+  <td class="button_cell mobileApplyButtonRow">
+   
+         <div class="button_row mobileApplyButtonRow">
+            <div class="center">
+            <span id="fbclc_createAccountButton" class="aquabtn active"><span><button id="fbclc_createAccountButton" name="fbclc_createAccountButton" onclick="return submitCreateAccount();">Create Account</button></span></span>
+          </div>
+            <br>
+          </div>
+  </td>
+  </tr>
+</tbody></table>

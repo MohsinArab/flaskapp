@@ -1,0 +1,19 @@
+'''import sqlite3
+
+conn = sqlite3.connect('database.db')
+print "Opened database successfully";
+
+conn.execute('CREATE TABLE students (name TEXT, addr TEXT, city TEXT, pin TEXT)')
+print "Table created successfully";
+conn.close()
+'''
+
+import sqlite3 as lite
+
+sqlite3.sqlite_version
+# '3.6.21'
+
+con = lite.connect('database.sqlite') 
+cur = con.cursor()    
+cur.execute('CREATE TABLE students (name TEXT, addr TEXT, city TEXT, pin TEXT)')
+print "Table created successfully";
